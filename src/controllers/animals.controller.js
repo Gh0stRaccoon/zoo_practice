@@ -23,5 +23,6 @@ const createAnimal = async (req, res) => {
 }
 
 module.exports = {
-    getAllAnimals
+    getAllAnimals,
+    createAnimal
 }
