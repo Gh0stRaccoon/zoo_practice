@@ -9,6 +9,19 @@ const getAllAnimals = async (req, res) => {
     })
 }
 
+const createAnimal = async (req, res) => {
+    const { name, species, age } = req.body
+
+    const animal = await Animal.create({
+        name, species, age
+    })
+
+    res.status(200).json({
+        success: true,
+        data: animal
+    })
+}
+
 module.exports = {
     getAllAnimals
 }
