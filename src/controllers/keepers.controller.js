@@ -14,6 +14,9 @@ const getAllKeepers = async (req, res) => {
     })
 }
 
+const administrarVacuna = async (req, res) => {
+}
+
 module.exports = {
     getAllKeepers
 }
